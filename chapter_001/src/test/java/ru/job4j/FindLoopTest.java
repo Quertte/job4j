@@ -11,7 +11,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5, 10, 3};
+        int[] input = new int[]{5, 10, 3};
         int value = 5;
         int result = find.indexOf(input, value);
         int expect = 0;
@@ -19,18 +19,18 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayNotHasElement(){
+    public void whenArrayNotHasElement() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {5,4,9};
+        int[] input = new int[]{5, 4, 9};
         int value = 3;
-        int result = find.indexOf(input,value);
-        int expect = - 1;
+        int result = find.indexOf(input, value);
+        int expect = -1;
         assertThat(result, is(expect));
     }
 
     @Test
     public void whenFind3() {
-        int[] input = new int[] {5, 2, 10, 2, 4};
+        int[] input = new int[]{5, 2, 10, 2, 4};
         int value = 2;
         int start = 2;
         int finish = 4;
@@ -40,13 +40,13 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenNotFoundElement(){
-        int[] input = new int[] {5,2,11,3,4};
+    public void whenNotFoundElement() {
+        int[] input = new int[]{5, 2, 11, 3, 4};
         int value = 3;
         int start = 0;
         int finish = 2;
-        int result = FindLoop.indexOf(input,value,start,finish);
-        int expect = - 1;
-        assertThat(result,is(expect));
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = -1;
+        assertThat(result, is(expect));
     }
 }

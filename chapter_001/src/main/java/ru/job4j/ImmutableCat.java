@@ -10,8 +10,8 @@ public class ImmutableCat {
         System.out.println("Новый кот создан. Порода кота: " + this.breed + ". Цвет глаз: " + this.eyeColor + ".");
     }
 
-    public ImmutableCat setBreed(String breed){
-        ImmutableCat c = new ImmutableCat(breed,this.eyeColor);
+    public ImmutableCat setBreed(String breed) {
+        ImmutableCat c = new ImmutableCat(breed, this.eyeColor);
         return c;
     }
 
@@ -21,7 +21,7 @@ public class ImmutableCat {
     }
 }
 
-class Test{
+class Test {
     public static void main(String[] args) {
         ImmutableCat first = new ImmutableCat("Мейн-кун", "Карие глаза");
         ImmutableCat second = first.setBreed("Сиамский");

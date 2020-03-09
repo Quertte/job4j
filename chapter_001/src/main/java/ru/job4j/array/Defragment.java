@@ -18,12 +18,12 @@ public class Defragment {
     }
 
     public static String[] compress(String[] array) {
-        for (int index = 0; index < array.length -1 ; index++) {
+        for (int index = 0; index < array.length - 1; index++) {
             if (array[index] == null) {
                 int point = index + 1;
                 while (point < array.length) {
                     if (array[point] != null) {
-                        swap(array,index,point);
+                        swap(array, index, point);
                         break;
                     }
                     point++;

@@ -7,9 +7,9 @@ public class StringEq {
         System.out.println(userHasAccess);
     }
 
-    public static boolean check(String login){
+    public static boolean check(String login) {
         String root = new String("root");
-        boolean access = login.equals(root) ;
+        boolean access = login.equals(root);
         return access;
 
     }

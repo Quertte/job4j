@@ -7,7 +7,7 @@ public class Counter {
         System.out.println(sum(3, 8));
         System.out.println(sum(1, 1));
 
-        System.out.println(sumByEven(10,30));
+        System.out.println(sumByEven(10, 30));
     }
 
     public static int sum(int start, int finish) {
@@ -18,10 +18,10 @@ public class Counter {
         return sum;
     }
 
-    public static int sumByEven(int start, int finish){
+    public static int sumByEven(int start, int finish) {
         int sum = 0;
-        for(int i = start; i <= finish; i++){
-            if(i % 2 == 0){
+        for (int i = start; i <= finish; i++) {
+            if (i % 2 == 0) {
                 sum = sum + i;
             }
         }

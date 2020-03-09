@@ -8,12 +8,12 @@ public class Fit {
         System.out.println("Идеальный вес для женщины " + woman + " кг");
     }
 
-    public static double manWeight(double height){
+    public static double manWeight(double height) {
         double rs1 = (height - 100) * 1.15;
         return rs1;
     }
 
-    public static double womanWeight(double height){
+    public static double womanWeight(double height) {
         double rs1 = (height - 110) * 1.15;
         return rs1;
     }
