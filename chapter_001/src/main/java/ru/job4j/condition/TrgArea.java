@@ -7,11 +7,6 @@ public class TrgArea {
     }
 
     public static double area(double a, double b, double c) {
-        /**
-         * Сделал двумя вариантами.
-         * 1) Вынес полуперимметр в отдельную переменную
-         * 2) Просто переписал формулу.(Закомментировано)
-         */
         double p = (a + b + c) / 2;
         //double rs1 = Math.sqrt((a+b+c)/2 * ((a + b + c)/ 2 - a) * ((a+b+c) / 2 - b ) * ((a + b +c) / 2 - c));
         double rs1 = Math.sqrt(p * (p - a) * (p - b) * (p - c));

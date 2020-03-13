@@ -7,8 +7,6 @@ public class MathFunc {
         int result2 = MathFunc.func2(5);
         int total = result1 + result2;
         System.out.println(total);
-
-
     }
 
     public static int func1(int x) {
